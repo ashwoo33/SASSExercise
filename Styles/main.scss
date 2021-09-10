@@ -19,14 +19,16 @@
  // 8
  .minor {
      background-color: silver;
-    //  9
     h1 {
+        // 9
         text-decoration: underline;
+        // 12
         @extend %styles
     }
-    // 10
     h2 {
+        // 10
         text-decoration: line-through;
+        // 12
         @extend %styles
     }
  }
