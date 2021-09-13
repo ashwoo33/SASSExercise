@@ -1,4 +1,4 @@
-// 11
+// 5
 @import "values";
 // 2
 .main {
@@ -6,7 +6,19 @@
     // 3
     h1 {
         color: #ddd;
+        // BONUS 1
+        &:hover {
+            @extend %style; 
+            text-decoration: underline;
+        }
     }
+
+    // BONUS 3
+    @include flex(space-between, center);
+    h4 {
+        display: none;
+    }
+
     // 7
     h2 {
         background-color: $brown1
@@ -22,6 +34,7 @@
     h1 {
         // 9
         text-decoration: underline;
+        margin-bottom: 25 * 4;
         // 12
         @extend %styles
     }
@@ -29,7 +42,6 @@
         // 10
         text-decoration: line-through;
         // 12
-        @extend %styles
+        @extend %style
     }
  }
-
